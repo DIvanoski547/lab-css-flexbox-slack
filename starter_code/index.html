@@ -11,8 +11,12 @@
       rel="stylesheet"
     />
 
+       <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <!--link your styles-->
-    >
     <link rel="stylesheet" href="./stylesheets/style.css" />
 
     <link rel="icon" type="image/x-icon" href="./images/slack-icon.png" />
@@ -28,7 +32,7 @@
           alt="Slack logo"
         />
 
-        <ul hidden>
+        <ul class="menu-left">
           <li>
             <a href="#">Product</a>
           </li>
@@ -44,7 +48,7 @@
         </ul>
       </div>
 
-      <div class="nav-right">
+      <div class="nav-right"> <!-- check-->
         <button class="button-nav">
           <img class="img-button" src="./images/icon-search.png" alt="Search icon" />
         </button>
@@ -92,7 +96,7 @@
       <section>
         <p class="p-1-1">Trusted by companies all over the world</p>
 
-        <div class="div-logs">
+        <div class="div-logos">
           <img class="comp-logo" src="./images/logo-airbnb.png" alt="Airbnb logo" />
           <img class="comp-logo2" src="./images/logo-nasa.png" alt="NASA logo" />
           <img class="comp-logo" src="./images/logo-uber.png" alt="Uber logo" />
@@ -211,10 +215,10 @@
     </main>
 
     <footer>
-      <img src="./images/iso-slack.png" alt="Slack logo" />
-      <div>
+      <img src="./images/iso-slack.png" alt="Slack logo" class="footer-logo"/>
+      <div class="footer-wrapper">
         <ul>
-          <li>WHY SLACK?</li>
+          <li class="footer-title"> why slack? </li>
           <li>Slack vs. Email</li>
           <li>Channels</li>
           <li>Engagement</li>
@@ -223,7 +227,7 @@
         </ul>
 
         <ul>
-          <li>PRODUCT</li>
+          <li class="footer-title">products</li>
           <li>Features</li>
           <li>Integrations</li>
           <li>Enterprise</li>
@@ -232,13 +236,13 @@
         </ul>
 
         <ul>
-          <li>PRICING</li>
+          <li class="footer-title">pricing</li>
           <li>Plans</li>
           <li>Paid vs. Free</li>
         </ul>
 
         <ul>
-          <li>COMPANY</li>
+          <li class="footer-title">company</li>
           <li>About Us</li>
           <li>Leadership</li>
           <li>Investor Relations</li>
@@ -247,20 +251,23 @@
           <li>Careers</li>
         </ul>
       </div>
+    
 
-      <ul>
+      <hr />
+
+      <ul class="bold">
         <li>Status</li>
         <li>Privacy</li>
         <li>Terms</li>
         <li>Cookie Preferences</li>
         <li>Contact Us</li>
-        <li>Change Region</li>
-        <li>Download Slack</li>
+        <li><img class="p-10" src="./images/icon-region.png">Region</li>
+        <li class="blue-text"><img class="p-10" src="./images/icon-download.png"><a href="#" target="_blank">Download Slack</a></li>
       </ul>
 
-      <hr />
+      
 
-      <ul>
+      <ul class="icons-wrapper">
         <li>
           <i class="fab fa-twitter"></i>
         </li>
@@ -275,7 +282,7 @@
         </li>
       </ul>
 
-      <div>
+      <div class="padding">
         <small>
           &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights
           reserved. Various trademarks held by their respective owners.
